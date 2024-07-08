@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+#logo {
+  width: 120px;
+  height: 48px;
+  padding: 1rem;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  padding: 2rem 10rem 0 10rem;
+  background-color: #f3f5fc;
+  min-height: 100vh;
+  width: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  height: 80vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
+}
+
+#text__input {
+  border: none; /* Quita el borde */
+  background-color: #f3f5fc; /* Cambia el color de fondo */
+  font-size: 32px; /* Cambia el tamaño de la fuente */
+  width: 100%; /* Ancho completo */
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.help {
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.controls_buttons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  width: 328px;
+  height: 67px;
+  border: 1px rgb(10, 56, 113) solid;
+  border-radius: 24px;
+}
+
+#btn_1 {
+  background-color: #0a3871;
+  color: white;
+}
+
+.container__result {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  /* border: 2px black solid; */
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 90%;
+  margin: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.container__result img {
+  max-width: 336px;
+  height: 304px;
+}
+
+#letra_p {
+  font-size: 16px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 1150px;
+  }
+
+  .text__input {
+    height: 100px;
+  }
+  .controls_buttons {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 550px;
+    padding: 0rem 0rem 0rem 4rem;
+  }
+
+  .text {
+    height: 50vh;
+  }
+
+  #text__input {
+    width: 300px;
+    height: 50px;
+  }
+  .controls_buttons {
+    flex-wrap: wrap;
+  }
+
+  .container__result {
+    width: 250px;
+  }
+
+  .container__result img {
+    display: none;
+  }
+}
